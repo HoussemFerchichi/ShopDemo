@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css
+">
+  <!-- Animate On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Produit Bac Informatique</title>
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="navigation">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__hamburger">
+            <svg>
+              <use xlink:href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </div>
+
+          <div class="nav__logo">
+            <a class="scroll-link">
+              Welcome !
+            </a>
+          </div>
+
+          <div class="nav__menu">
+            <div class="menu__top">
+              <span class="nav__category">PHONE</span>
+              <a href="#" class="close__toggle">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Products</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__icons">
+            <a href="#" class="icon__item">
+              <svg class="icon__user">
+                <use xlink:href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="icon__item">
+              <svg class="icon__search">
+                <use xlink:href="./images/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="icon__item">
+              <svg class="icon__cart">
+                <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
+              </svg>
+              <span id="cart__total">0</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="page__title-area">
+      <div class="container">
+        <div class="page__title-container">
+          <ul class="page__titles">
+            <li>
+              <a href="/">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-home"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page__title">Product</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <!-- Products Details -->
+      <section class="section product-details__section">
+        <div class="product-detail__container">
+          <div class="product-detail__left">
+            <div class="details__container--left">
+              <div class="product__pictures">
+                <div class="pictures__container">
+                  <img class="picture" src="./images/Front.jpg" id="pic1" />
+                </div>
+                <div class="pictures__container">
+                  <img class="picture" src="./images/Back.jpg" id="pic2" />
+                </div>
+              </div>
+              <div class="product__picture" id="product__picture">
+                <!-- <div class="rect" id="rect"></div> -->
+                <div class="picture__container">
+                  <img src="./images/Front.jpg" id="pic" />
+                </div>
+              </div>
+              <div class="zoom" id="zoom"></div>
+            </div>
+
+            <div class="product-details__btn">
+              <a class="add" href="#">
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-cart-plus"></use>
+                  </svg>
+                </span>
+                RESET</a>
+              <a class="buy" href="#">
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-credit-card"></use>
+                  </svg>
+                </span>
+                BUY NOW
+              </a>
+            </div>
+          </div>
+
+          <div class="product-detail__right">
+            <div class="product-detail__content">
+              <h3>Produit Bac Informatique</h3>
+              <div class="price">
+                <span class="new__price">$50.00</span>
+              </div>
+              <div class="product__review">
+                <div class="rating">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                  </svg>
+                </div>
+                <a href="#" class="rating__quatity">30 review</a>
+              </div>
+              <p>
+                Mar7be bel nes lkol
+              </p>
+              <form action="index.php" method="post">
+                <div class="product__info-container">
+                  <ul class="product__info">
+                    <li class="select">
+                      <div class="select__option">
+                        <label for="colors">Taille</label>
+                        <select name="colors" id="colors" class="select-box">
+                          <option value="s">S</option>
+                          <option value="m">M</option>
+                          <option value="l">L</option>
+                          <option value="xl">XL</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                      <label for=""class="skipp">Name: </label><input type="text" name="name">
+                    </li>
+                    <li>
+                      <label for=""class="skipp">Prename: </label><input type="text"name="prename">
+                    </li>
+                    <li>
+                      <label for="" class="skipp">Phone: </label><input type="number" name="phone">
+                    </li>
+                    <li>
+
+                      <div class="input-counter">
+                        <span>Quantity:</span>
+                        <div>
+                          <span class="minus-btn">
+                            <svg>
+                              <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                            </svg>
+                          </span>
+                          <input type="text" min="1" value="1" max="10" class="counter-btn" name="quantity">
+                          <span class="plus-btn">
+                            <svg>
+                              <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <input type="submit">
+                  </form>
+                  <li>
+                    <span>Subtotal:</span>
+                    <a href="#" class="new__price">$50.00</a>
+                  </li>
+                  <li>
+                    <span>Availability:</span>
+                    <a href="#" class="in-stock">In Stock</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-detail__bottom">
+          <div class="title__container tabs">
+
+            <div class="section__titles category__titles ">
+              <div class="section__title detail-btn active" data-id="description">
+                <span class="dot"></span>
+                <h1 class="primary__title">Description</h1>
+              </div>
+            </div>
+
+
+
+            <div class="section__titles">
+              <div class="section__title detail-btn" data-id="shipping">
+                <span class="dot"></span>
+                <h1 class="primary__title">Contact</h1>
+              </div>
+            </div>
+          </div>
+
